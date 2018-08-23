@@ -16,6 +16,9 @@ class TaskC1 {
         int x=sc.nextInt();
         int y=sc.nextInt();
         int s=x+y;
+        System.out.println("Ввод:");
+        System.out.println(x+" "+y);
+        System.out.println("Вывод:");
         System.out.printf("Sum = %d \n", s);
     }
 }
