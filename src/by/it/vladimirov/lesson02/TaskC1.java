@@ -16,10 +16,6 @@ class TaskC1 {
         int x=sc.nextInt();
         int y=sc.nextInt();
         int s=x+y;
-        System.out.printf("Sum = %d", s);
+        System.out.printf("Sum = %d \n", s);
     }
-
-
-
-
 }
