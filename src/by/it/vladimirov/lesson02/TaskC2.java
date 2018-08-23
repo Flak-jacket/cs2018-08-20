@@ -13,7 +13,23 @@ BIN:100010+11010=111100
 HEX:22+1a=3c
 OCT:42+32=74
 */
+import java.util.Scanner;
 class TaskC2 {
+    public static void main(String[] args) {
+        Scanner sc=new Scanner(System.in);
+        int x=sc.nextInt();
+        int y=sc.nextInt();
+        int s=x+y;
+            System.out.printf("DEC:%d \n", s);
+        System.out.print("BIN:");
+        String convert = Integer.toBinaryString(s);
+        System.out.println(convert);
+        System.out.print("HEX:");
+        convert = Integer.toOctalString(s);
+        System.out.println(convert);
+        System.out.print("OCT:");
+        convert = Integer.toHexString(s).toUpperCase();
+        System.out.println(convert);
 
-
+    }
 }
