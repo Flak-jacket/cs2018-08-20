@@ -29,6 +29,19 @@ package by.it.vladimirov.lesson02;
 
 
 */
-class TaskC3 {
 
-}
+import java.util.Scanner;
+class TaskC3 {
+    public static void main(String[] args) {
+        Scanner in = new Scanner(System.in);
+        int x = in.nextInt();
+
+        double z = 9.81;
+        double y = 3.86;
+        double n = y / z;
+        double a = x * n;
+        a = Math.round(a * 100) / 100.0d;
+        System.out.println(a);
+
+    }
+    }
