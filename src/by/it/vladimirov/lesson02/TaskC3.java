@@ -36,12 +36,17 @@ class TaskC3 {
         Scanner in = new Scanner(System.in);
         int x = in.nextInt();
 
+        double a = getWeight(x);
+        System.out.println(a);
+
+    }
+
+    static double getWeight(int x) {
         double z = 9.81;
         double y = 3.86;
         double n = y / z;
         double a = x * n;
         a = Math.round(a * 100) / 100.0d;
-        System.out.println(a);
-
+        return a;
     }
-    }
+}
