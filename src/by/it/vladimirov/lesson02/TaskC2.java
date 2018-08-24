@@ -13,6 +13,7 @@ BIN:100010+11010=111100
 HEX:22+1a=3c
 OCT:42+32=74
 */
+import java.util.Locale;
 import java.util.Scanner;
 class TaskC2 {
     public static void main(String[] args) {
@@ -20,7 +21,7 @@ class TaskC2 {
         int x=sc.nextInt();
         int y=sc.nextInt();
         int s=x+y;
-            System.out.printf("DEC:%d+%d=%d \n", x, y, s);
+            System.out.printf("DEC:%d+%d=%d\n", x, y, s);
         System.out.print("BIN:");
         String convert = Integer.toBinaryString(x);
         System.out.print(convert);
@@ -31,23 +32,22 @@ class TaskC2 {
         convert = Integer.toBinaryString(s);
         System.out.println(convert);
         System.out.print("HEX:");
-        convert = Integer.toOctalString(x);
-        System.out.print(convert);
-        System.out.print("+");
-        convert = Integer.toOctalString(y);
-        System.out.print(convert);
-        System.out.print("=");
-        convert = Integer.toOctalString(s);
-        System.out.println(convert);
-        System.out.print("OCT:");
         convert = Integer.toHexString(x).toUpperCase();
-        System.out.print(convert);
+        System.out.print(convert.toLowerCase());
         System.out.print("+");
         convert = Integer.toHexString(y).toUpperCase();
-        System.out.print(convert);
+        System.out.print(convert.toLowerCase());
         System.out.print("=");
         convert = Integer.toHexString(s).toUpperCase();
-        System.out.println(convert);
-
+        System.out.println(convert.toLowerCase());
+        System.out.print("OCT:");
+        convert = Integer.toOctalString(x);
+        System.out.print(convert.toLowerCase());
+        System.out.print("+");
+        convert = Integer.toOctalString(y);
+        System.out.print(convert.toLowerCase());
+        System.out.print("=");
+        convert = Integer.toOctalString(s);
+        System.out.println(convert.toLowerCase());
     }
 }

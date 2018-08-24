@@ -19,6 +19,6 @@ class TaskC1 {
         System.out.println("Ввод:");
         System.out.println(x+" "+y);
         System.out.println("Вывод:");
-        System.out.printf("Sum = %d \n", s);
+        System.out.printf("Sum = %d\n", s);
     }
 }
