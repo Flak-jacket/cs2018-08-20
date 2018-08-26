@@ -22,11 +22,11 @@ Lesson 03. Task A2. Стихотворение
 */
 class TaskA2 {
     public static void main(String[] args) {
-        String a="Моё любимое стихотворение";
-        String b="esg";
-        String c= "sehseh";
-        String d="easgseg0";
-        String e="rshsh";
-        System.out.println();
+        String a="Моё любимое стихотворение: \n";
+        String b="Мной тысячи и тысячи раз путь тот будет пройден.\n";
+        String c="В моей основе жизни ты одна. \n";
+        String d="Кинжал надежды ориентирами твоими скован: \n";
+        String e="Сияние глаз, улыбки красота...\n";
+        System.out.println(a+b+c+d+e);
     }
 }
