@@ -29,6 +29,46 @@ Lesson 03. Task B2. Нужно написать программу, котора
 Отрицательный дискриминант
 
 */
-class TaskB2 {
+import java.io.IOException;
+import java.util.InputMismatchException;
+import java.util.Scanner;
 
+public class TaskB2
+{
+    static int a, b, c;
+    static float d;
+    static double x1, x2;
+
+    public static void main(String args []) throws IOException
+    {
+        try{
+            Scanner s = new Scanner(System.in);
+            a = s.nextInt();
+            b = s.nextInt();
+            c = s.nextInt();
+            System.out.println("Ввод:\n"+a+" " + b+" " + c);
+
+            d = (b * b) - (4 * a * c);
+            System.out.println("Вывод:");
+
+            if(d < 0)
+                System.out.print("Отрицательный дискриминант");
+            else
+            if(d == 0)
+            {
+                x1 = (-b) / (2 * a);
+                System.out.println (x1);
+            }
+            else
+            {
+                x1 = (-b + Math.sqrt(d)) / (2 * a);
+                x2 = (-b - Math.sqrt(d)) / (2 * a);
+                if (x1 == x2)
+                    System.out.println ("x1 = x2 " + x1);
+                else
+                    System.out.println (x1 + " " + x2);
+            }
+        }catch(InputMismatchException e){System.out.println("Отрицательный дискриминант");}
+    }
 }
+
