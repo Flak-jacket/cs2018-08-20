@@ -34,9 +34,9 @@ public class TaskC1 {
     public static double convertCelsiumToFahrenheit(int celsium) {
         Scanner in = new Scanner(System.in);
                 celsium = in.nextInt();
-        double tf = (celsium * 9.0/5.0)+32.0;
+        double F = (celsium * 9.0/5.0)+32.0;
 
-        return tf;
+        return F;
     }
 }
 
