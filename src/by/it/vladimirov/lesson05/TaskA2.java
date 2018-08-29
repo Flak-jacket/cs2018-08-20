@@ -34,7 +34,7 @@ public class TaskA2 {
             System.out.println(line);
                 break;
 
-            list.add(line);
+ //           list.add(line);
 
         }
     }

@@ -25,7 +25,6 @@ package by.it.vladimirov.lesson04;
 import java.util.Scanner;
 public class TaskC3 {
     static String printIn(int i) {
-        int d = i / 10;
         if (i <= 19) {
             switch (i) {
                 case 0:
