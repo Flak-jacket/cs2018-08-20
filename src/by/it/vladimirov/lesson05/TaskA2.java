@@ -23,20 +23,17 @@ import java.util.ArrayList;
 import java.util.Scanner;
 public class TaskA2 {
     public static void main(String[] args) {
-        ArrayList<String> list=new ArrayList<>();
-        Scanner in = new Scanner(System.in);
+        Scanner scanner = new Scanner(System.in);
+        ArrayList<String> array=new ArrayList<>();
 
-        while(true)
-        {
-            String line= in.nextLine();
-            if (line.equals("END"))
-                System.out.println(line);
-            System.out.println(line);
-                break;
 
- //           list.add(line);
-
+        for (;;){
+            String value=scanner.next();
+if (value.equals("END"))
+    break;
+array.add(value);
         }
+        System.out.println(array);
     }
 
 }

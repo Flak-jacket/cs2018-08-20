@@ -11,16 +11,55 @@ package by.it.vladimirov.lesson05;
 */
 
 import java.util.List;
-
+import java.io.BufferedReader;
+import java.io.InputStreamReader;
+import java.util.ArrayList;
+import java.util.List;
+import java.lang.Integer;
 public class TaskC1 {
     public static void main(String[] args) throws Exception
     {
+        //add your code here
+        BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
 
+        List<Integer>list = new ArrayList<>();
+        List<Integer>two = new ArrayList<>();
+        List<Integer>three = new ArrayList<>();
+        List<Integer>other = new ArrayList<>();
+
+        for(int i = 0; i < 20; i++){
+            int a = Integer.parseInt(br.readLine());
+            list.add(a);
+        }
+
+        for(int i = 0; i < list.size(); i++){
+            Integer x = list.get(i);
+            if(x % 3 ==0 && x % 2 == 0){
+                three.add(x);
+                two.add(x);
+            }
+
+            else if(x%3==0)
+                three.add(x);
+
+            else if(x%2==0){
+                two.add(x);
+
+            }else{
+                other.add(x);
+            }
+        }
+        printList(three);
+        printList(two);
+        printList(other);
     }
 
-    private static void printList(List<Integer> list) {
-        for (Integer aList : list) System.out.println(aList);
+
+    public static void printList(List list) {
+        for(int i = 0;i < list.size(); i++){
+            System.out.println(list.get(i));
+        }
+
     }
-
-
 }
+

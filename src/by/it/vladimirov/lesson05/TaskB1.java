@@ -8,8 +8,22 @@ package by.it.vladimirov.lesson05;
 4. Используя цикл выведите его содержимое на экран, каждое значение с новой строки.
 
 */
-
-
+import java.util.Scanner;
+import java.util.ArrayList;
 public class TaskB1 {
+    public static void main(String[] args) {
+        ArrayList<String> list = new ArrayList<>();
 
+        list.add("1");
+        list.add("2");
+        list.add("3");
+        list.add("4");
+        list.add("5");
+
+        System.out.println(list.size());
+
+        for (String s : list) {
+            System.out.println(s);
+        }
+    }
 }
